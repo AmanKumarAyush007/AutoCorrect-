@@ -50,12 +50,6 @@ REQUIREMENTS
 - A dictionary file named 'words.txt' containing one word per line
 - Standard C++ libraries (iostream, fstream, vector, algorithm, etc.)
 
-FILE STRUCTURE
---------------
-autocorrect/
-├── main.cpp           # Main Code
-├── words.txt          # Dictionary file 
-└── README.txt         # This file
 
 INSTALLATION & SETUP
 --------------------
