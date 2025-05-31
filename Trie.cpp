@@ -105,7 +105,7 @@ void findSuggestions(node* curr, string& target, string currentWord,
         }
     }
     
-    // Pruning: if current word is already too long compared to target
+    //if current word is already too long compared to target
     if(currentWord.length() > target.length() + maxEditDist) {
         return;
     }
@@ -120,7 +120,8 @@ void findSuggestions(node* curr, string& target, string currentWord,
     }
 }
 
-vector<string> getSuggestions(Trie& dictionary, string word, int maxEditDist = 2) {
+
+vector<string> getSuggestions(Trie& dictionary, string word, int maxEditDist) {
     // Convert to lowercase
     for(int i = 0; i < word.length(); i++){
         word[i] = tolower(word[i]);
@@ -156,7 +157,7 @@ int main(){
         if(s.size()) dictionary.insert(s);
     }
 
-    int n;
+    int n = 1;
     cin >> n;
 
     while(n--){
