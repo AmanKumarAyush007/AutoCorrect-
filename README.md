@@ -148,7 +148,7 @@ vector<string> suggestions = getSuggestions(dictionary, s, 3); // Allow up to 3 
 
 Limiting Number of Suggestions:
 Modify the output loop to show more/fewer suggestions:
-for(int i = 0; i < min(10, (int)suggestions.size()); i++) { // Show up to 10 suggestions
+for(int i = 0; i < min(5, (int)suggestions.size()); i++) { // Show up to 10 suggestions
 
 Adding More Character Support:
 To support additional characters beyond a-z, modify:
